@@ -1,0 +1,29 @@
+{
+  "findings": [
+    {
+      "code": "LOW_MEMORY",
+      "evidence": "Free memory: 7%",
+      "next_step": "Review Task Manager memory usage; do not end unfamiliar processes."
+    },
+    {
+      "code": "LOW_DISK",
+      "evidence": "Disk 1: 9% free",
+      "next_step": "Review Storage settings and approved cleanup; do not delete user files."
+    },
+    {
+      "code": "APIPA",
+      "evidence": "Interface 1",
+      "next_step": "If DHCP is expected, inspect cable/VLAN and DHCP availability; APIPA alone does not prove a DHCP outage."
+    },
+    {
+      "code": "NO_GATEWAY",
+      "evidence": "Interface 1",
+      "next_step": "Confirm whether this interface needs routed IPv4 access; local-only links may not."
+    },
+    {
+      "code": "NO_DNS",
+      "evidence": "Interface 1",
+      "next_step": "Review approved DNS configuration; this flag does not test name resolution."
+    }
+  ]
+}
